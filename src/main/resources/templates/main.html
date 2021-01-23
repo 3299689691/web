@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:include="common :: commonheader"></div>
+</head>
+<body>
+<p>登录成功</p>
+<p th:text="${session.loginUser.userName}"></p>
+<a th:href="@{/dynamic_table}" >表格:</a>
+<a th:href="@{/form_layouts}" >文件:</a>
+</body>
+</html>

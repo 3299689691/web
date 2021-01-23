@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_account?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      filters: stat,wall,slf4j
+      stat-view-servlet:
+        enabled: true
+        login-password: admin
+        login-username: admin
+        reset-enable: false
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+
+
+
+
+
+
