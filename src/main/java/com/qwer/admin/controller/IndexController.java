@@ -53,7 +53,7 @@ public class IndexController {
     @PostMapping("/login")
     public String main(User user, HttpSession session, Model model){ //RedirectAttributes
         System.out.println(user.getUserName());
-        if(true){
+        if(false){
             //把登陆成功的用户保存起来
             session.setAttribute("loginUser",user);
             //登录成功重定向到main.html;  重定向防止表单重复提交

@@ -1,4 +1,6 @@
 spring:
+  messages:
+    basename: i18n.login
   datasource:
     url: jdbc:mysql://localhost:3306/db_account?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
     username: root
@@ -16,7 +18,8 @@ spring:
         url-pattern: /*
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
-
+server:
+  port: 80
 
 
 
